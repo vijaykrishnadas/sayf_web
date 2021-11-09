@@ -1,13 +1,283 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  padding: 0 80px;
+  background: linear-gradient(#4445C1, #f2e7fd, #EEF0FF);
+  color: white;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  height: 100px;
+}
+
+.hero-section{
+  display: flex;
+  height: 100vh;
+}
+
+.hero-left, .hero-right{
+  flex: 1;
+}
+
+.hero-left{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 50px;
+}
+
+.hero-left p{
+  font-size: 24px;
+}
+
+.hero-left h1{
+  font-size: 50px;
+}
+
+.hero-right img{
+  width: 80%;
+}
+
+
+.btn-get-started{
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  font-size: 16px;
+  height: 50px;
+  transition: ease-in 0.1s;
+  background-color: white;
+}
+
+.btn-get-started:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.btn-download img{
+  height: 26px;
+}
+
+.btn-download{
+  display: flex;
+  align-items: center;
+  width: 180px;
+  justify-content: space-around;
+  background-color: white;
+  color: #000000;
+  padding: 10px;
+  border-radius: 10px;
+  transition: ease-in 0.1s;
+}
+
+.btn-download:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.second-section{
+  display: flex;
+  color: #000000;
+}
+
+.second-section-left, .second-section-right {
+  flex: 1;
+}
+
+.second-section-left img{
+  width: 30vw;
+}
+
+.second-section-right h2{
+  font-size: 32px;
+}
+
+.second-section-right-inside{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.second-section-right-inside img{
+  width: 200px;
+}
+
+.second-section-right-inside p{
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.third-section h1{
+  text-align: center;
+  color: #000000;
+  margin-top: 100px;
+  font-size: 40px;
+  margin-bottom: 75px;
+}
+
+.cards{
+  display: flex;
+}
+
+.card{
+  flex: 1;
+}
+
+.card-content{
+  color: #000000;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.calculator{
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #8f8fd4;
+}
+
+.range{
+  width: 100%;
+}
+
+.ranges{
+  display: flex;
+  justify-content: space-between;
+}
+ .calculator p {
+  margin: 10px 0px;
+}
+.calculator-bottom{
+  background-color: #4445C1;
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 0px 0px 10px 10px;
+  margin-top: 20px;
+}
+
+.calculator-bottom button{
+  background-color: #EEF0FF;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.fourth-section h1{
+  text-align: center;
+  color: #000000;
+  margin-top: 100px;
+  font-size: 40px;
+}
+
+.fourth-section h3{
+  text-align: center;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.brands {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.brands img{
+  height: 10%;
+  width: 10%;
+}
+
+.fifth-section{
+  display: flex;
+  height: 100vh;
+  background-color: white;
+  padding: 0 50px;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+.fifth-section .left{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+.fifth-section .right{
+  flex: 1;
+
+}
+
+.fifth-section .left{
+  color: #000000;
+}
+
+.fifth-section .left h1{
+  font-size: 50px;
+}
+
+.fifth-section .left p{
+  font-size: 24px;
+}
+
+.fifth-section .left .text-field{
+  height: 50px;
+  margin-top: 50px;
+  
+}
+
+.fifth-section .left input{
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  border: 2px solid #4445C1;
+  box-shadow: 0px 0px 20px gainsboro;
+}
+
+.fifth-section .left input:focus{
+ outline: none;
+}
+
+.fifth-section .left button{
+  padding: 10px;
+  background-color: #4445C1;
+  color: white;
+  border: none;
+  height: 100%;
+  border-radius:  0 10px 10px 0 ;
+  box-shadow: 0px 0px 20px gainsboro;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer {
+  color: #000000;
+  margin-top: 100px;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer img{
+  width: 200px;
 }
