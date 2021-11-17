@@ -81,6 +81,7 @@ body{
   padding: 10px;
   border-radius: 10px;
   transition: ease-in 0.1s;
+  font-weight: bold;
 }
 
 .btn-download:hover{
@@ -91,6 +92,7 @@ body{
 .second-section{
   display: flex;
   color: #000000;
+  padding: 0px 50px;
 }
 
 .second-section-left, .second-section-right {
@@ -143,6 +145,10 @@ body{
   text-align: center;
 }
 
+.card-content h3{
+  margin-bottom: 20px;
+}
+
 .calculator{
   background-color: #ffffff;
   color: #000000;
@@ -163,7 +169,7 @@ body{
   margin: 10px 0px;
 }
 .calculator-bottom{
-  background-color: #4445C1;
+  background-color: #00abf5;
   padding: 10px;
   color: #ffffff;
   border-radius: 0px 0px 10px 10px;
@@ -191,6 +197,7 @@ body{
   text-align: center;
   color: #000000;
   margin-top: 20px;
+  margin-bottom: 80px;
 }
 
 .brands {
@@ -213,6 +220,7 @@ body{
   padding: 0 50px;
   margin-top: 50px;
   border-radius: 20px;
+  align-items: center;
 }
 
 .fifth-section .left{
@@ -225,7 +233,10 @@ body{
 
 .fifth-section .right{
   flex: 1;
+}
 
+.fifth-section img{
+  width: 100%;
 }
 
 .fifth-section .left{
@@ -259,6 +270,10 @@ body{
  outline: none;
 }
 
+.fifth-section .text-field:hover{
+  transform: scale(1.02);
+}
+
 .fifth-section .left button{
   padding: 10px;
   background-color: #4445C1;
@@ -275,9 +290,49 @@ body{
   color: #000000;
   margin-top: 100px;
   padding: 20px;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
 }
+
+.footer h2{
+  margin-bottom: 20px;
+}
+
+.footer p{
+  margin-top: 10px;
+}
+
 
 .footer img{
   width: 200px;
+}
+
+@media screen and (max-width: 800px) {
+  .hero-section {
+      flex-direction: column;
+      height: 75vh;
+  }
+  .hero-left {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar{
+    margin-bottom: 40px;
+  }
+
+  .hero-left p , .hero-left h1{
+    margin-bottom: 20px;
+  }
+
+  .hero-right {
+    display: none;
+  }
+
+  
+.sayf-video{
+  background-color: wheat;
+}
+  
 }

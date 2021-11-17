@@ -10,13 +10,14 @@ import Amazon from './assets/amazon.png'
 import Mcd from './assets/mcd.png'  
 import Lenovo from './assets/lenovo.png' 
 import Forget from './assets/forget.gif' 
-import Sayf from './assets/Sayf.gif' 
+import Sayf_News from './assets/sayf_news.svg';
 
 import React, {useState} from 'react'
 
 
+
 function App() {
- 
+
   const [data1, setData1] = useState(1000)
   const [data2, setData2] = useState(10)
   const [data3, setData3] = useState(10)
@@ -51,7 +52,7 @@ function App() {
           <div className="btn-download"><span><img src={Gplay} alt="g" /></span><span>Download App</span></div>
        </div>
        <div className="hero-right">
-          <img src={Sayf} alt="hero-right" />
+         
        </div>
      </div>
      <div className="second-section">
@@ -171,7 +172,7 @@ function App() {
           <img src={Lenovo} alt="lenovo" />
         </div>
      </div>
-     <div className="fifth-section">
+     < div className="fifth-section">
        <div className="left">
          <h1>Never miss an update</h1>
           <p>Sign up for our monthly financial advice <br />newsletter and exclusive updates. We never <br />share your email with third parties.</p>
@@ -181,14 +182,42 @@ function App() {
           </div>
 
        </div>
-        <div className="right"></div>
+        <div className="right">
+          <img src={Sayf_News} alt="" />
+        </div>
      </div>
+
      <div className="footer">
-           <div>
+           <div className="f1">
               <img src={Logo_D} alt="" />
               <h2>Location: <br /> Bangalore, India</h2>
+              <h1><u>support@sayf.in</u></h1>
            </div>
-            <h1><u>support@sayf.in</u></h1>
+           <div className="f2">
+             <h2>Information</h2>
+             <p>Home</p>
+             <p>Invest</p>
+             <p>Why Worthy?</p>
+             <p>Community</p>
+             <p>Learn</p>
+             <p>About Us</p>
+             <p>Partners</p>
+           </div>
+           <div className="f3">
+             <h2>Legal</h2>
+             <p>Privacy Policy</p>
+             <p>Terms of use</p>
+             <p>Referral Program</p>
+             <p>SEC filings</p>
+           </div>
+           <div className="f4">
+             <h2>Support</h2>
+             <p>Login</p>
+             <p>Get Started</p>
+             <p>Calculator</p>
+             <p>FAQ</p>
+             <p>Chat</p>
+           </div>
        <div className="bottom"></div>
      </div>
    </div>
