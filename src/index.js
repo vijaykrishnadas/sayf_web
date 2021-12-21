@@ -4,9 +4,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import {
+  HashRouter as Router,
+  Route,
+  Switch
+} from "react-router-dom";
+import Terms from './Terms';
+import Privacy from './privacy';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Switch>
+        <Route exact path="/"><App /></Route>
+        <Route exact path="/terms"><Terms /></Route>
+        <Route exact path="/privacy"><Privacy /></Route>
+      </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
