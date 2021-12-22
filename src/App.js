@@ -247,33 +247,28 @@ function App() {
    </div>
    <div className="footer">
     <div className="f1">
-        <img src={Logo_D} alt="" />
-        <h2>Location: <br /> Bangalore, India</h2>
-        <h1><u>support@sayf.in</u></h1>
+    <img src={Logo_D} alt="logo" height="70px" width="45px"/>
+        
+        <p>C/o Mahaveer Gandhi, <br/>
+        Station Back Road, <br/>
+        Bijapur, <br/>
+        Karnataka - 586101</p>
     </div>
     <div className="f2">
-      <h2>Information</h2>
+      <h2>SayF</h2>
       <p>Home</p>
-      <p>Invest</p>
-      <p>Why Worthy?</p>
-      <p>Community</p>
-      <p>Learn</p>
-      <p>About Us</p>
-      <p>Partners</p>
+      <p>Calculator</p>
+      <p>FAQs</p>
+      <a href = "mailto:priyesh@sayf.in?subject = Feedback&body = Message">Contact Us</a>
     </div>
     <div className="f3">
       <h2>Legal</h2>
       <a href="sayf#/privacy"> <p>Privacy Policy</p></a>
       <a href="sayf#/terms"> <p>Terms & Conditions</p></a>
     </div>
-    <div className="f4">
+    {/* <div className="f4">
       <h2>Support</h2>
-      <p>Login</p>
-      <p>Get Started</p>
-      <p>Calculator</p>
-      <p>FAQ</p>
-      <p>Chat</p>
-    </div>
+    </div> */}
   <div className="bottom"></div>
   </div>
   </div>
