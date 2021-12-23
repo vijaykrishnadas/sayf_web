@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/sayf_web/static/css/main.042b5f82.css",
+    "main.js": "/sayf_web/static/js/main.8a2b7c2c.js",
+    "static/js/787.18998a98.chunk.js": "/sayf_web/static/js/787.18998a98.chunk.js",
+    "static/media/Svid.gif": "/sayf_web/static/media/Svid.ee5038f97b1c19cc9af2.gif",
+    "static/media/landing.mp4": "/sayf_web/static/media/landing.268dac1992f11b09d00c.mp4",
+    "static/media/activate.png": "/sayf_web/static/media/activate.1ed60ead622a22049d3f.png",
+    "static/media/initiate.png": "/sayf_web/static/media/initiate.66a2ff014b3c40c1b9b3.png",
+    "static/media/forget.gif": "/sayf_web/static/media/forget.e9f3cc887e8c590fc041.gif",
+    "static/media/4.png": "/sayf_web/static/media/4.1cf5169e20c54618136b.png",
+    "static/media/5.png": "/sayf_web/static/media/5.9564d603985aada2ec45.png",
+    "static/media/10.png": "/sayf_web/static/media/10.75670e7c0a58d5882edb.png",
+    "static/media/11.png": "/sayf_web/static/media/11.00bf816123483be794c7.png",
+    "static/media/12.png": "/sayf_web/static/media/12.00bf816123483be794c7.png",
+    "static/media/Augmont.png": "/sayf_web/static/media/Augmont.c7818f7025dc53716d68.png",
+    "static/media/sayf_news.svg": "/sayf_web/static/media/sayf_news.75a1c0b94635e3d64a7c494adde7f8fc.svg",
+    "static/media/2.png": "/sayf_web/static/media/2.f108a059daf196d12904.png",
+    "static/media/6.png": "/sayf_web/static/media/6.c2ac568f55f64be2eea4.png",
+    "static/media/1.png": "/sayf_web/static/media/1.cd2f59d031bb75385be6.png",
+    "static/media/gplay.png": "/sayf_web/static/media/gplay.8c1ffddce63439169579.png",
+    "static/media/paytm.png": "/sayf_web/static/media/paytm.68f56c9bc3e5ae9f4fa7.png",
+    "static/media/7.png": "/sayf_web/static/media/7.587d6914122a83bba886.png",
+    "static/media/stores.png": "/sayf_web/static/media/stores.8b252523cec912b02eda.png",
+    "static/media/roundups.png": "/sayf_web/static/media/roundups.1f23ad294f5cb88010d2.png",
+    "static/media/screen.png": "/sayf_web/static/media/screen.c54e955e7de3bc1a8346.png",
+    "static/media/dailyinvestment.png": "/sayf_web/static/media/dailyinvestment.92b54b7a51fc75e29095.png",
+    "index.html": "/sayf_web/index.html",
+    "main.042b5f82.css.map": "/sayf_web/static/css/main.042b5f82.css.map",
+    "main.8a2b7c2c.js.map": "/sayf_web/static/js/main.8a2b7c2c.js.map",
+    "787.18998a98.chunk.js.map": "/sayf_web/static/js/787.18998a98.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.042b5f82.css",
+    "static/js/main.8a2b7c2c.js"
+  ]
+}
