@@ -68,6 +68,9 @@ body{
   left: 0;
 
   animation: moveSlideshow 10s linear infinite;
+
+  display: flex;
+  align-items: center;
 }
 
 .mover img {
@@ -336,24 +339,24 @@ li {
   width: 10%;
 }
 
-
-
 /* ///////////////////////////////// */
 
 .faq-heading{
   border-bottom: #777;
   padding: 20px 60px;
 }
+
 .faq-container{
 display: flex;
 justify-content: center;
 flex-direction: column;
 }
+
 .hr-line{
 width: 60%;
 margin: auto;
-
 }
+
 /* Style the buttons that are used to open and close the faq-page body */
 .faq-page {
   /* background-color: #eee; */
@@ -366,6 +369,7 @@ margin: auto;
   transition: 0.4s;
   margin: auto;
 }
+
 .faq-body{
   margin: auto;
   /* text-align: center; */
@@ -374,6 +378,7 @@ margin: auto;
  
 }
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
 .active,
 .faq-page:hover {
   background-color: #F9F9F9;
@@ -503,15 +508,23 @@ margin: auto;
 @media screen and (max-width: 800px) {
   .hero-section {
       flex-direction: column;
-      height: 75vh;
+      height: 100vh;
+      padding: 0px;
+      margin: 0px;
   }
+
+  .full-body{
+    margin: 0px;
+    padding: 0px 30px;
+  }
+
   .hero-left {
     margin: 0;
     padding-top: 70px;
   }
 
   .navbar{
-    margin-bottom: 40px;
+    margin-bottom: -40px;
   }
 
   .hero-left p , .hero-left h1{
@@ -519,15 +532,35 @@ margin: auto;
   }
 
   .hero-right {
-
     display: none;
   }
 
+  .cards{
+    flex-direction: column;
+  }
   
-.sayf-video{
-  background-color: wheat;
-}
+  .sayf-video{
+    background-color: wheat;
+  }
+
+  .fifth-section{
+    height: fit-content;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer{
+    flex-direction: column;
+    text-align: center;
+  }
+
   
+  .f2{
+    margin-top: 30px;
+    margin-left: 0px !important; 
+    margin-bottom: 30px;
+  }
 }
 
 /* ////////////////////////////////// */

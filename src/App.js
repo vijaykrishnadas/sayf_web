@@ -257,8 +257,8 @@ function App() {
     <div className="f2">
       <h2>SayF</h2>
       <p>Home</p>
-      <p>Calculator</p>
-      <p>FAQs</p>
+      <p>Calculator</p> 
+      <p>FAQs</p><br />
       <a href = "mailto:priyesh@sayf.in?subject = Feedback&body = Message">Contact Us</a>
     </div>
     <div className="f3">
