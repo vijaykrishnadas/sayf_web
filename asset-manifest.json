@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sayf_web/static/css/main.a2c1ca21.css",
-    "main.js": "/sayf_web/static/js/main.e84fa1d2.js",
+    "main.css": "/sayf_web/static/css/main.33441d0f.css",
+    "main.js": "/sayf_web/static/js/main.0ae8b238.js",
     "static/js/787.18998a98.chunk.js": "/sayf_web/static/js/787.18998a98.chunk.js",
     "static/media/Svid.gif": "/sayf_web/static/media/Svid.ee5038f97b1c19cc9af2.gif",
     "static/media/landing.mp4": "/sayf_web/static/media/landing.268dac1992f11b09d00c.mp4",
@@ -15,6 +15,7 @@
     "static/media/12.png": "/sayf_web/static/media/12.00bf816123483be794c7.png",
     "static/media/Augmont.png": "/sayf_web/static/media/Augmont.c7818f7025dc53716d68.png",
     "static/media/sayf_news.svg": "/sayf_web/static/media/sayf_news.75a1c0b94635e3d64a7c494adde7f8fc.svg",
+    "static/media/s_logo.png": "/sayf_web/static/media/s_logo.6189b68c91a8c3b1d421.png",
     "static/media/2.png": "/sayf_web/static/media/2.f108a059daf196d12904.png",
     "static/media/6.png": "/sayf_web/static/media/6.c2ac568f55f64be2eea4.png",
     "static/media/1.png": "/sayf_web/static/media/1.cd2f59d031bb75385be6.png",
@@ -26,12 +27,12 @@
     "static/media/screen.png": "/sayf_web/static/media/screen.c54e955e7de3bc1a8346.png",
     "static/media/dailyinvestment.png": "/sayf_web/static/media/dailyinvestment.92b54b7a51fc75e29095.png",
     "index.html": "/sayf_web/index.html",
-    "main.a2c1ca21.css.map": "/sayf_web/static/css/main.a2c1ca21.css.map",
-    "main.e84fa1d2.js.map": "/sayf_web/static/js/main.e84fa1d2.js.map",
+    "main.33441d0f.css.map": "/sayf_web/static/css/main.33441d0f.css.map",
+    "main.0ae8b238.js.map": "/sayf_web/static/js/main.0ae8b238.js.map",
     "787.18998a98.chunk.js.map": "/sayf_web/static/js/787.18998a98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2c1ca21.css",
-    "static/js/main.e84fa1d2.js"
+    "static/css/main.33441d0f.css",
+    "static/js/main.0ae8b238.js"
   ]
 }
