@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sayf_web/static/css/main.33441d0f.css",
+    "main.css": "/sayf_web/static/css/main.f6feb093.css",
     "main.js": "/sayf_web/static/js/main.0ae8b238.js",
     "static/js/787.18998a98.chunk.js": "/sayf_web/static/js/787.18998a98.chunk.js",
     "static/media/Svid.gif": "/sayf_web/static/media/Svid.ee5038f97b1c19cc9af2.gif",
@@ -27,12 +27,12 @@
     "static/media/screen.png": "/sayf_web/static/media/screen.c54e955e7de3bc1a8346.png",
     "static/media/dailyinvestment.png": "/sayf_web/static/media/dailyinvestment.92b54b7a51fc75e29095.png",
     "index.html": "/sayf_web/index.html",
-    "main.33441d0f.css.map": "/sayf_web/static/css/main.33441d0f.css.map",
+    "main.f6feb093.css.map": "/sayf_web/static/css/main.f6feb093.css.map",
     "main.0ae8b238.js.map": "/sayf_web/static/js/main.0ae8b238.js.map",
     "787.18998a98.chunk.js.map": "/sayf_web/static/js/787.18998a98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33441d0f.css",
+    "static/css/main.f6feb093.css",
     "static/js/main.0ae8b238.js"
   ]
 }
