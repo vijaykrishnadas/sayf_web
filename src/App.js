@@ -263,8 +263,8 @@ function App() {
     </div>
     <div className="f3">
       <h2>Legal</h2>
-      <a href="sayf#/privacy"> <p>Privacy Policy</p></a>
-      <a href="sayf#/terms"> <p>Terms & Conditions</p></a>
+      <a href="#/privacy"> <p>Privacy Policy</p></a>
+      <a href="#/terms"> <p>Terms & Conditions</p></a>
     </div>
     {/* <div className="f4">
       <h2>Support</h2>
