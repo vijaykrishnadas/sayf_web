@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sayf_web/static/css/main.c82f63c7.css",
-    "main.js": "/sayf_web/static/js/main.d7067388.js",
+    "main.css": "/sayf_web/static/css/main.e53edbef.css",
+    "main.js": "/sayf_web/static/js/main.1fd59158.js",
     "static/js/787.18998a98.chunk.js": "/sayf_web/static/js/787.18998a98.chunk.js",
     "static/media/Svid.gif": "/sayf_web/static/media/Svid.ee5038f97b1c19cc9af2.gif",
     "static/media/landing.mp4": "/sayf_web/static/media/landing.268dac1992f11b09d00c.mp4",
@@ -26,12 +26,12 @@
     "static/media/screen.png": "/sayf_web/static/media/screen.c54e955e7de3bc1a8346.png",
     "static/media/dailyinvestment.png": "/sayf_web/static/media/dailyinvestment.92b54b7a51fc75e29095.png",
     "index.html": "/sayf_web/index.html",
-    "main.c82f63c7.css.map": "/sayf_web/static/css/main.c82f63c7.css.map",
-    "main.d7067388.js.map": "/sayf_web/static/js/main.d7067388.js.map",
+    "main.e53edbef.css.map": "/sayf_web/static/css/main.e53edbef.css.map",
+    "main.1fd59158.js.map": "/sayf_web/static/js/main.1fd59158.js.map",
     "787.18998a98.chunk.js.map": "/sayf_web/static/js/787.18998a98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c82f63c7.css",
-    "static/js/main.d7067388.js"
+    "static/css/main.e53edbef.css",
+    "static/js/main.1fd59158.js"
   ]
 }
