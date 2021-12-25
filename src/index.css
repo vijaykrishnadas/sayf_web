@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -8,8 +9,8 @@
 
 body{
   /* padding: 0 80px; */
-  /* background: linear-gradient(#4445C1, #f2e7fd, #EEF0FF); */
-  background-color: #101046;
+  background: linear-gradient(#101046, #7134ff);
+  /* background-color: #101046; */
   color: white;
 }
 
@@ -55,29 +56,30 @@ body{
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #7a7aff;
 }
 
 
 .mover {
-  height: 250px;
   width: 10000px;
-  
-  position: absolute;
+  background-color: rgba(255, 255, 255, 1);
+  /* position: absolute; */
   overflow-x:hidden;
   top: 0;
   left: 0;
 
-  animation: moveSlideshow 10s linear infinite;
-
+  animation: moveSlideshow 20s linear infinite;
   display: flex;
   align-items: center;
+
 }
 
 .mover img {
   display:inline-block;
-  vertical-align:middle;
+  align-self: center;
   width:200px;
-  margin:20px;
+  margin: 0px 50px;
 }
 
 .fourth-section{
@@ -96,6 +98,7 @@ body{
   text-align: center;
   align-items: center;
   width: 40%;
+  justify-content: space-around;
 }
 
 .sixth-section{
@@ -123,7 +126,7 @@ body{
 
 @keyframes moveSlideshow {
   100% { 
-    transform: translateX(-520px);  
+    transform: translateX(-1100px);  
   }
 }
 
@@ -219,6 +222,8 @@ body{
   font-size: 20px;
 }
 
+
+
 .third-section h1{
   text-align: center;
   color: white;
@@ -300,6 +305,10 @@ li {
 
 .one{
   padding-bottom: 10px;
+}
+
+.card-content-left h3{
+  margin-bottom: 15px;
 }
 
 .calculator-bottom button{
@@ -437,10 +446,12 @@ margin: auto;
 
 .fifth-section .left{
   color: #000000;
+  text-align: center;
 }
 
 .fifth-section .left h1{
   font-size: 50px;
+  margin-bottom: 30px;
 }
 
 .fifth-section .left p{
@@ -449,8 +460,12 @@ margin: auto;
 
 .fifth-section .left .text-field{
   height: 50px;
-  margin-top: 50px;
-  
+  margin-top: 50px; 
+}
+
+.btn-subscribe{
+  transition: 0.1s ease-in;
+  font-size: 20px;
 }
 
 .fifth-section .left input{
@@ -466,8 +481,8 @@ margin: auto;
  outline: none;
 }
 
-.fifth-section .text-field:hover{
-  transform: scale(1.02);
+.fifth-section .btn-subscribe:hover{
+  transform: scale(1.1);
 }
 
 .fifth-section .left button{
@@ -476,21 +491,27 @@ margin: auto;
   color: white;
   border: none;
   height: 100%;
-  border-radius:  0 10px 10px 0 ;
+  border-radius:  10px;
   box-shadow: 0px 0px 20px gainsboro;
   font-weight: bold;
   cursor: pointer;
 }
 
 .footer {
-  color: black;
-  background-color: pink;
+  color: white;
   margin-top: 100px;
   padding: 50px 0px 50px 0px;
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
+
+.footer a{
+  color: white;
+}
+
+
+
 
 .footer h2{
   margin-bottom: 20px;
@@ -502,17 +523,37 @@ margin: auto;
 
 
 .footer img{
-  width: 200px;
+  width: 120px;
 }
 
 @media screen and (max-width: 800px) {
   .hero-section {
       flex-direction: column;
-      height: 100vh;
+      height: fit-content;
       padding: 0px;
       margin: 0px;
+      text-align: center;
   }
 
+  .hero-left{
+    order: 2;
+  }
+
+  .hero-left h1{
+   font-size: 50px;
+  }
+
+
+  .hero-left p {
+    font-size: 20px;
+  }
+
+  .hero-right{
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: -20px;
+  }
   .full-body{
     margin: 0px;
     padding: 0px 30px;
@@ -520,7 +561,8 @@ margin: auto;
 
   .hero-left {
     margin: 0;
-    padding-top: 70px;
+    margin-bottom: 50px;
+    padding-top: 20px;
   }
 
   .navbar{
@@ -531,16 +573,25 @@ margin: auto;
     margin-bottom: 20px;
   }
 
-  .hero-right {
-    display: none;
-  }
-
   .cards{
     flex-direction: column;
   }
   
   .sayf-video{
     background-color: wheat;
+  }
+
+  .third-section h1{
+    margin-bottom: 20px;
+  }
+
+  .card-content-left h3{
+    margin-bottom: 20px;
+  }
+
+  .calculator{
+    margin-top: -20px;
+    margin-bottom: 30px;
   }
 
   .fifth-section{
@@ -560,6 +611,40 @@ margin: auto;
     margin-top: 30px;
     margin-left: 0px !important; 
     margin-bottom: 30px;
+  }
+
+  .fifth-section{
+    margin-bottom: -80px;
+  }
+
+  .fifth-section .left h1{
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+
+  .fifth-section .left p{
+    font-size: 18px;
+  }
+
+  .fifth-section .right{
+    margin-top: 30px;
+  }
+
+  .trusted-partners{
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .trusted-partners div{
+    margin: 0px 20px;
+  }
+  .terms-body{
+    /* margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-down: 50px; */
+    margin: 20px !important;
+    padding: 20px !important;
   }
 }
 
@@ -583,7 +668,7 @@ margin: auto;
   margin-top: 50px;
   margin-down: 50px; */
   margin: 50px 200px 50px 200px;
-  background-color: #8f8fd4;
+  background-color: #4222cf;
   position: relative;
 }
 
@@ -612,8 +697,4 @@ a {
 
 .footer-logo{
   width: 50px;
-}
-
-.f2{
-  margin-left: 50px;
 }

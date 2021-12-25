@@ -1,6 +1,6 @@
 import Gplay from './assets/gplay.png' 
 import Logo from './assets/logo.png' 
-import Logo_D from './assets/logo_d.png' 
+import Logo_D from './assets/s_logo.png' 
 import Screen from './assets/screen.png' 
 import UD from './assets/underline.png' 
 import Activate from './assets/activate.png' 
@@ -93,7 +93,7 @@ function App() {
        <img src={Logo} alt="logo" height="40px" width="75px"/>
        <div className="btn-download">
          <span><img src={Gplay} alt="g" /></span>
-         <div className="download-app">Download App</div>
+         <a href="https://tally.so/r/w27Abn"><div className="download-app">Get Early Access</div></a>
        </div>
      </div>
      <div className="hero-section ">
@@ -103,7 +103,7 @@ function App() {
             counts. Invest it.
           </h1>
           <p>
-          A personal finance app that helps you save,<br /> invest and optimize your spending for a better future
+          A personal finance app that helps you save,<br /> invest and optimize your spending for a better future.
           </p>
           
        </div>
@@ -147,7 +147,7 @@ function App() {
          <div className="card">
            
            <div className="card-content-left">
-             <img src={PartnerStore} width="20%" height="auto"/>
+             <img src={PartnerStore} width="20%"  height="auto"/>
              <h3>Partner store</h3>
              <p>Earn upto 25% worth of <br/>gold while spending at our<br />300+ partner stores.</p>
            </div>
@@ -191,7 +191,7 @@ function App() {
 
       <div className="fourth-section">
         <div className="tp-heading">
-          Our trusted Partners and Affilations
+          <h4>Our trusted Partners and Affilations</h4><br />
         </div>
         <div className="trusted-partners">
           <div className="tp-photos" padding-top="10px">
@@ -235,8 +235,8 @@ function App() {
          <h1>Never miss an update</h1>
           <p>Sign up for our monthly financial advice <br />newsletter and exclusive updates. We never <br />share your email with third parties.</p>
           <div className="text-field">
-            <input type="text" />
-            <button className="btn-subscribe">Subscribe</button>
+            {/* <input type="text" /> */}
+            <a href="https://tally.so/r/w27Abn"><button className="btn-subscribe">Subscribe</button></a>
           </div>
 
        </div>
@@ -247,7 +247,7 @@ function App() {
    </div>
    <div className="footer">
     <div className="f1">
-    <img src={Logo_D} alt="logo" height="70px" width="45px"/>
+    <img src={Logo_D} alt="logo"/>
         
         <p>C/o Mahaveer Gandhi, <br/>
         Station Back Road, <br/>
@@ -258,8 +258,8 @@ function App() {
       <h2>SayF</h2>
       <p>Home</p>
       <p>Calculator</p> 
-      <p>FAQs</p><br />
-      <a href = "mailto:priyesh@sayf.in?subject = Feedback&body = Message">Contact Us</a>
+      <p>FAQs</p>
+      <p><a href = "mailto:priyesh@sayf.in?subject = Feedback&body = Message">Contact Us</a></p>
     </div>
     <div className="f3">
       <h2>Legal</h2>
@@ -269,7 +269,6 @@ function App() {
     {/* <div className="f4">
       <h2>Support</h2>
     </div> */}
-  <div className="bottom"></div>
   </div>
   </div>
   );
