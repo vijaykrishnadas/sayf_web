@@ -1,0 +1,18 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-bottom: 80px;
+    height: 100px;
+    align-items: center;
+  }
+  
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.nav-right .login-link{
+    margin-right: 30px;
+    color: white;
+}
