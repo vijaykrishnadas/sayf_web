@@ -11,6 +11,8 @@ import {
 } from "react-router-dom";
 import Terms from './Terms';
 import Privacy from './privacy';
+import Login from './pages/Login'
+import Footer from './Components/Footer';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,7 +21,9 @@ ReactDOM.render(
         <Route exact path="/"><App /></Route>
         <Route exact path="/terms"><Terms /></Route>
         <Route exact path="/privacy"><Privacy /></Route>
+        <Route exact path="/login"><Login /></Route>
       </Switch>
+      <Footer></Footer>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

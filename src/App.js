@@ -1,5 +1,4 @@
-import Gplay from './assets/gplay.png' 
-import Logo from './assets/logo.png' 
+
 import Logo_D from './assets/s_logo.png' 
 import Screen from './assets/screen.png' 
 import UD from './assets/underline.png' 
@@ -34,6 +33,7 @@ import Sayf_News from './assets/sayf_news.svg';
 import Video from './assets/landing.mp4'
 import React, {useState} from 'react'
 
+import Navbar from './Components/Navbar'
 
 
 function App() {
@@ -89,13 +89,7 @@ function App() {
     // <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript" />
     <div className="landing-page">
    <div className="full-body">
-     <div className="navbar">
-       <img src={Logo} alt="logo" height="40px" width="75px"/>
-       <div className="btn-download">
-         <span><img src={Gplay} alt="g" /></span>
-         <a href="https://tally.so/r/w27Abn"><div className="download-app">Get Early Access</div></a>
-       </div>
-     </div>
+     <Navbar/>
      <div className="hero-section ">
        <div className="hero-left">
           <h1>
@@ -245,31 +239,6 @@ function App() {
         </div>
      </div>
    </div>
-   <div className="footer">
-    <div className="f1">
-    <img src={Logo_D} alt="logo"/>
-        
-        <p>C/o Mahaveer Gandhi, <br/>
-        Station Back Road, <br/>
-        Bijapur, <br/>
-        Karnataka - 586101</p>
-    </div>
-    <div className="f2">
-      <h2>SayF</h2>
-      <p>Home</p>
-      <p>Calculator</p> 
-      <p>FAQs</p>
-      <p><a href = "mailto:priyesh@sayf.in?subject = Feedback&body = Message">Contact Us</a></p>
-    </div>
-    <div className="f3">
-      <h2>Legal</h2>
-      <a href="#/privacy"> <p>Privacy Policy</p></a>
-      <a href="#/terms"> <p>Terms & Conditions</p></a>
-    </div>
-    {/* <div className="f4">
-      <h2>Support</h2>
-    </div> */}
-  </div>
   </div>
   );
 }
