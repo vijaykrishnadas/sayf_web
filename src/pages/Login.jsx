@@ -39,7 +39,7 @@ const Login = () => {
                                     <div className="login-text">
                                         <img className='contact-logo' src={contact} alt="contact" />Enter Contact Number
                                     </div>
-                                    <input placeholder='987....' type="text" onChange={getNumber}/> <br />
+                                    <input required placeholder='987....' type="text" onChange={getNumber}/> <br />
                                     <button type='submit' className='otp-btn'>Get OTP</button> <br />
                                 </div>
                                 </div>
@@ -55,7 +55,7 @@ const Login = () => {
                                         <h3>Login </h3>
                                 <div className="otp-container">
                                     <p>OTP sent to {number}</p>
-                                    <input placeholder='Enter OTP here...' type="text"/> <br />
+                                    <input required placeholder='Enter OTP here...' type="text"/> <br />
                                     <button className='otp-btn'>Verify</button> <br />
                                 </div>
                                 </div>
