@@ -17,6 +17,7 @@
     color: white;
     transition: 0.1s ease-in;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .login-link:hover{

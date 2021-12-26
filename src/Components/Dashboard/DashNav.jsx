@@ -1,9 +1,19 @@
 import React from 'react'
 
+import Gplay from '../Dashboard/dashboard_assets/gplay.png';
+import Logo from '../Dashboard/dashboard_assets/logo.png' 
+
 const DashNav = () => {
     return (
-        <div>
-            Navbar
+        <div className='dash-nav'>
+              <img src={Logo} alt="logo" height="40px" width="75px"/>
+                <div className="nav-right">
+                    <a href="#/login" className='login-link'>Login</a>
+                    <div className="btn-download">
+                    <span><img src={Gplay} alt="g" /></span>
+                    <a href="https://tally.so/r/w27Abn"><div className="download-app">Get Early Access</div></a>
+                </div>
+                </div>
         </div>
     )
 }

@@ -68,7 +68,7 @@ const Login = () => {
   return (
     <div className="login-body">
       {enterNumber ? (
-        <form onSubmit={onClickSendOtp}>
+        <form >
           <div className="login">
             <img className="login-img" src={Logo_D} alt="sayf_logo" />
             <h3>Login </h3>
@@ -84,7 +84,7 @@ const Login = () => {
                 onChange={getNumber}
               />{" "}
               <br />
-              <button type="submit" className="otp-btn">
+              <button type="button" onClick={onClickSendOtp} className="otp-btn">
                 Get OTP
               </button>{" "}
               <br />
@@ -95,7 +95,7 @@ const Login = () => {
         <></>
       )}
       {otp ? (
-        <form onSubmit={onClickVerifyOtp}>
+        <form>
           <div className="login">
             <img className="login-img" src={Logo_D} alt="sayf_logo" />
             <h3>Login </h3>
@@ -108,7 +108,7 @@ const Login = () => {
                 onChange={getOtpVal}
               />{" "}
               <br />
-              <button className="otp-btn">Verify</button> <br />
+              <button  type="button" onClick={onClickVerifyOtp} className="otp-btn">Verify</button> <br />
             </div>
           </div>
         </form>
