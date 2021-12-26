@@ -52,7 +52,7 @@ function App() {
   function handleChange2(val){
     setdS(val.target.value)
   }
-  function handleChange3(val){
+  function handleChange3(val) {
     setl(val.target.value)
   }
 
@@ -88,119 +88,119 @@ function App() {
 
     // <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript" />
     <div className="landing-page">
-   <div className="full-body">
-     <Navbar/>
-     <div className="hero-section ">
-       <div className="hero-left">
-          <h1>
-            Every Spending <br />
-            counts. Invest it.
-          </h1>
-          <p>
-          A personal finance app that helps you save,<br /> invest and optimize your spending for a better future.
-          </p>
-          
-       </div>
-       <div className="hero-right">
-       <img src={Sayf} />
-       </div>
-     </div>
-     <div className="partner-stores">
-       <div className="mover">
-        <img src={a} alt="Natural" />
-        <img src={b} alt="Natural" />
-        {/* <img src={c} alt="Natural" /> */}
-        <img src={d} alt="Natural" />
-        <img src={e} alt="Natural" />
-        <img src={f} alt="Natural" />
-        <img src={h} alt="Natural" />
-        <img src={g} alt="Natural" />
-        {/* <img src={i} alt="Natural" /> */}
-        {/* <img src={j} alt="Natural" /> */}
-        <img src={k} alt="Natural" />
-        <img src={l} alt="Natural" />
-        <img src={m} alt="Natural" />
-        <img src={a} alt="Natural" />
-        <img src={b} alt="Natural" />
-        {/* <img src={c} alt="Natural" /> */}
-        <img src={d} alt="Natural" />
-        <img src={e} alt="Natural" />
-        <img src={f} alt="Natural" />
-        <img src={g} alt="Natural" />
-        <img src={h} alt="Natural" />
-        {/* <img src={i} alt="Natural" /> */}
-        {/* <img src={j} alt="Natural" /> */}
-        <img src={k} alt="Natural" />
-        <img src={l} alt="Natural" />
-        <img src={m} alt="Natural" />
-       </div>
-     </div>
-     <div className="third-section">
-       <h1>Build your FUTURE with SayF <br /> Try it for Yourself!</h1>
-       <div className="cards">
-         <div className="card">
-           
-           <div className="card-content-left">
-             <img src={PartnerStore} width="20%"  height="auto"/>
-             <h3>Partner store</h3>
-             <p>Earn upto 25% worth of <br/>gold while spending at our<br />300+ partner stores.</p>
-           </div>
-         </div>
-         <div className="card">
-            <div className="calculator">
-              <span className="one">Average Monthly Spending</span>
-              <span className="two"><b>₹{avgMS}</b></span>
-              <input className="range" type="range" min='4000' max='100000' step="2000"  defaultValue={6000}  onChange={handleChange1}/>
-              <span className="one">Daily Savings</span>
-              <span className="two"><b>₹{dS}</b></span>
-              <input className="range" type="range" min='10' max='500' step="10"  onChange={handleChange2}/>
-              <span className="one">Time Period</span>
-              <span className="two"><b>{l} {l==1? y = "year" : y="years"}</b></span>
-              <input className="range" type="range" min='1' max='30' defaultValue={7}  onChange={handleChange3}/>
-              <span className="one1">Roundup your spare change</span>
-              <span className="two"><input checked={checked1} type="checkbox" onChange={(e)=> {setRad1(e.target.checked); setchecked1(!checked1)}}/></span>  
-              <span className="one1"><br/>Partner store savings</span>
-              <span className="two"><input checked={checked2} type="checkbox" onChange={(e)=> {setRad2(e.target.checked); setchecked2(!checked2)}}/></span>
-              <div className="calculator-bottom">
-                <p>Your total value</p>
-                <h2>₹ {data4}</h2>
+      <div className="full-body">
+        <Navbar />
+        <div className="hero-section ">
+          <div className="hero-left">
+            <h1>
+              Every Spending <br />
+              counts. Invest it.
+            </h1>
+            <p>
+              A personal finance app that helps you save,<br /> invest and optimize your spending for a better future.
+            </p>
+
+          </div>
+          <div className="hero-right">
+            <img src={Sayf} />
+          </div>
+        </div>
+        <div className="partner-stores">
+          <div className="mover">
+            <img src={a} alt="Natural" />
+            <img src={b} alt="Natural" />
+            {/* <img src={c} alt="Natural" /> */}
+            <img src={d} alt="Natural" />
+            <img src={e} alt="Natural" />
+            <img src={f} alt="Natural" />
+            <img src={h} alt="Natural" />
+            <img src={g} alt="Natural" />
+            {/* <img src={i} alt="Natural" /> */}
+            {/* <img src={j} alt="Natural" /> */}
+            <img src={k} alt="Natural" />
+            <img src={l} alt="Natural" />
+            <img src={m} alt="Natural" />
+            <img src={a} alt="Natural" />
+            <img src={b} alt="Natural" />
+            {/* <img src={c} alt="Natural" /> */}
+            <img src={d} alt="Natural" />
+            <img src={e} alt="Natural" />
+            <img src={f} alt="Natural" />
+            <img src={g} alt="Natural" />
+            <img src={h} alt="Natural" />
+            {/* <img src={i} alt="Natural" /> */}
+            {/* <img src={j} alt="Natural" /> */}
+            <img src={k} alt="Natural" />
+            <img src={l} alt="Natural" />
+            <img src={m} alt="Natural" />
+          </div>
+        </div>
+        <div className="third-section">
+          <h1>Build your FUTURE with SayF <br /> Try it for Yourself!</h1>
+          <div className="cards">
+            <div className="card">
+
+              <div className="card-content-left">
+                <img src={PartnerStore} width="20%" height="auto" />
+                <h3>Partner store</h3>
+                <p>Earn upto 25% worth of <br />gold while spending at our<br />300+ partner stores.</p>
               </div>
-           </div>
-         </div>
-         <div className="card">
-          <div className="card-content">
-             <img src={AutoInvest} width="16%" height="auto"/>
-             <h3>Auto-Invest</h3>
-             <p>Take investing off your to do list. <br /> Schedule how much and how often <br />you want to save.</p>
-           </div>
-           <div className="card-content">
-             <img src={Roundups} width="16%" height="auto"/>
-             <h3>Roundups</h3>
-             <p>We round-up your <br />everyday spendings to the next <br />tens and automatically invest.</p>
-           </div>
-         </div>
-       </div>
-     </div>
-
-
-      <div className="fourth-section">
-        <div className="tp-heading">
-          <h4>Our trusted Partners and Affilations</h4><br />
-        </div>
-        <div className="trusted-partners">
-          <div className="tp-photos" padding-top="10px">
-            <img src={Paytm} width="100%" height="auto"/>
+            </div>
+            <div className="card">
+              <div className="calculator">
+                <span className="one">Average Monthly Spending</span>
+                <span className="two"><b>₹{avgMS}</b></span>
+                <input className="range" type="range" min='4000' max='100000' step="2000" defaultValue={6000} onChange={handleChange1} />
+                <span className="one">Daily Savings</span>
+                <span className="two"><b>₹{dS}</b></span>
+                <input className="range" type="range" min='10' max='500' step="10" onChange={handleChange2} />
+                <span className="one">Time Period</span>
+                <span className="two"><b>{l} {l == 1 ? y = "year" : y = "years"}</b></span>
+                <input className="range" type="range" min='1' max='30' defaultValue={7} onChange={handleChange3} />
+                <span className="one1">Roundup your spare change</span>
+                <span className="two"><input checked={checked1} type="checkbox" onChange={(e) => { setRad1(e.target.checked); setchecked1(!checked1) }} /></span>
+                <span className="one1"><br />Partner store savings</span>
+                <span className="two"><input checked={checked2} type="checkbox" onChange={(e) => { setRad2(e.target.checked); setchecked2(!checked2) }} /></span>
+                <div className="calculator-bottom">
+                  <p>Your total value</p>
+                  <h2>₹ {data4}</h2>
+                </div>
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-content">
+                <img src={AutoInvest} width="16%" height="auto" />
+                <h3>Auto-Invest</h3>
+                <p>Take investing off your to do list. <br /> Schedule how much and how often <br />you want to save.</p>
+              </div>
+              <div className="card-content">
+                <img src={Roundups} width="16%" height="auto" />
+                <h3>Roundups</h3>
+                <p>We round-up your <br />everyday spendings to the next <br />tens and automatically invest.</p>
+              </div>
+            </div>
           </div>
-        <div className="tp-photos">
-            <img src={Icici} width="100%" height="auto" />
         </div>
-          <div className="tp-photos">
-            <img src={Augmont} width="100%" height="auto" />
+
+
+        <div className="fourth-section">
+          <div className="tp-heading">
+            <h4>Our trusted Partners and Affilations</h4><br />
+          </div>
+          <div className="trusted-partners">
+            <div className="tp-photos" padding-top="10px">
+              <img src={Paytm} width="100%" height="auto" />
+            </div>
+            <div className="tp-photos">
+              <img src={Icici} width="100%" height="auto" />
+            </div>
+            <div className="tp-photos">
+              <img src={Augmont} width="100%" height="auto" />
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* <h1 className="faq-heading">FAQ'S</h1>
+        {/* <h1 className="faq-heading">FAQ'S</h1>
         <div className="faq-container">
             <div className="faq-one">
                 <h1 className="faq-page">Question</h1>
@@ -224,22 +224,22 @@ function App() {
             </div>
         </div> */}
 
-     < div className="fifth-section">
-       <div className="left">
-         <h1>Never miss an update</h1>
-          <p>Sign up for our monthly financial advice <br />newsletter and exclusive updates. We never <br />share your email with third parties.</p>
-          <div className="text-field">
-            {/* <input type="text" /> */}
-            <a href="https://tally.so/r/w27Abn"><button className="btn-subscribe">Subscribe</button></a>
-          </div>
+        < div className="fifth-section">
+          <div className="left">
+            <h1>Never miss an update</h1>
+            <p>Sign up for our monthly financial advice <br />newsletter and exclusive updates. We never <br />share your email with third parties.</p>
+            <div className="text-field">
+              {/* <input type="text" /> */}
+              <a href="https://tally.so/r/w27Abn"><button className="btn-subscribe">Subscribe</button></a>
+            </div>
 
-       </div>
-        <div className="right">
-          <img src={Sayf_News} alt="" />
+          </div>
+          <div className="right">
+            <img src={Sayf_News} alt="" />
+          </div>
         </div>
-     </div>
-   </div>
-  </div>
+      </div>
+    </div>
   );
 }
 

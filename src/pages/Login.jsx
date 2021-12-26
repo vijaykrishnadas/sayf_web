@@ -1,14 +1,17 @@
-import { useState, React } from "react";
+import React from "react";
+import { useState } from "react";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import "./login.css";
 import Logo_D from "../assets/logo_d.png";
 import contact from "./login_assets/contact.png";
-import { send_otp } from "../api/index";
+import { sendOtp, verifyOtp } from "../api/index";
+import aes256 from 'aes256';
 
 const Login = () => {
   const [enterNumber, setEnterNumber] = useState(true);
   const [number, setNumber] = useState(null);
   const [otp, setOtp] = useState(false);
+  const [otpVal, setOtpVal] = useState("");
 
   const history = useHistory();
 
@@ -16,14 +19,18 @@ const Login = () => {
     setNumber(val.target.value);
   }
 
-  async function sendOtp() {
+  function getOtpVal(val) {
+    setOtpVal(val.target.value);
+  }
+
+  async function onClickSendOtp() {
     // Send OTP
     console.log(number);
     var body = {
       mobile: number,
     };
-    var res = await send_otp(body);
-    if (res.status == 200) {
+    var res = await sendOtp(body);
+    if (res.status === 200) {
       setOtp(true);
       setEnterNumber(false);
     } else {
@@ -31,15 +38,37 @@ const Login = () => {
     }
   }
 
-  function verifyOtp() {
+  async function onClickVerifyOtp() {
     // Verify OTP
-    console.log(otp);
-    history.push("/dashboard");
+    console.log(otpVal);
+    console.log(number);
+    var body = {
+      mobile: number,
+      otp: otpVal,
+    };
+    var msg = "";
+    var res = await verifyOtp(body);
+    // console.log(res.body);
+    if (res.status === 200) {
+      var resData = res.data;
+      if (resData["type"] === "success") {
+        var token = resData['token'];
+        var encryptedToken = aes256.encrypt(process.env.REACT_APP_AES256_KEY, token);
+        localStorage.setItem('token', encryptedToken);
+        history.push("/dashboard");
+        return;
+      } else {
+        msg = "Wrong OTP!";
+      }
+    } else {
+      msg = "Oops! Something Went Wrong";
+    }
+    alert(msg);
   }
   return (
     <div className="login-body">
       {enterNumber ? (
-        <form onSubmit={sendOtp}>
+        <form onSubmit={onClickSendOtp}>
           <div className="login">
             <img className="login-img" src={Logo_D} alt="sayf_logo" />
             <h3>Login </h3>
@@ -66,7 +95,7 @@ const Login = () => {
         <></>
       )}
       {otp ? (
-        <form onSubmit={verifyOtp}>
+        <form onSubmit={onClickVerifyOtp}>
           <div className="login">
             <img className="login-img" src={Logo_D} alt="sayf_logo" />
             <h3>Login </h3>
@@ -76,6 +105,7 @@ const Login = () => {
                 required
                 placeholder="Enter OTP here..."
                 type="text"
+                onChange={getOtpVal}
               />{" "}
               <br />
               <button className="otp-btn">Verify</button> <br />
