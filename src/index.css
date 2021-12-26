@@ -596,6 +596,7 @@ margin: auto;
   .footer{
     flex-direction: column;
     text-align: center;
+    margin-top: 75px;
   }
 
   

@@ -13,6 +13,27 @@
 }
 
 .nav-right .login-link{
-    margin-right: 30px;
+    margin-right: 50px;
     color: white;
+    transition: 0.1s ease-in;
+    font-size: 20px;
+}
+
+.login-link:hover{
+    transform: scale(1.10);
+  }
+
+.login-link::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -5px;
+    transition: 0.1s ease-in;
+}
+
+.login-link:hover:after{
+  width: 100%;
 }

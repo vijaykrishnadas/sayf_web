@@ -28,7 +28,6 @@ const Login = () => {
     }
     return (
         <div className='login-body'>
-          
                         {
                             enterNumber? 
                             <form onSubmit={displayNumber}>
@@ -39,7 +38,7 @@ const Login = () => {
                                     <div className="login-text">
                                         <img className='contact-logo' src={contact} alt="contact" />Enter Contact Number
                                     </div>
-                                    <input required placeholder='987....' type="text" onChange={getNumber}/> <br />
+                                    <input required placeholder='98754....' type="text" onChange={getNumber}/> <br />
                                     <button type='submit' className='otp-btn'>Get OTP</button> <br />
                                 </div>
                                 </div>

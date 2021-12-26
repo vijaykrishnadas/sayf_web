@@ -15,7 +15,7 @@ const Footer = () => {
                 </div>
                 <div className="f2">
                 <h2>SayF</h2>
-                <p>Home</p>
+                <a href="#/"><p>Home</p></a>
                 <p>Calculator</p> 
                 <p>FAQs</p>
                 <p><a href = "mailto:priyesh@sayf.in?subject = Feedback&body = Message">Contact Us</a></p>
