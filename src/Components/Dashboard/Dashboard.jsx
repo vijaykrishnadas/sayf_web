@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import "./dashboard.css";
 import DashNav from "./DashNav";
 
-import { Carousel } from "@trendyol-js/react-carousel";
+import Carousel from 'react-elastic-carousel';
 import CarouselItem from "./CarouselItem";
 import ProgressBar from "./ProgressBar";
 
@@ -13,6 +13,8 @@ import img from "./dashboard_assets/7.png";
 import Chrome from "./dashboard_assets/chrome.png";
 
 import { userData, partnerStores } from "../../api";
+
+
 
 const Dashboard = () => {
   // const user = useParams();
@@ -37,6 +39,7 @@ const Dashboard = () => {
   useEffect(() => {
     getUserInfo();
   }, []);
+
 
   return (
     <>
@@ -79,22 +82,35 @@ const Dashboard = () => {
           <div className="left">
             <div className="card">
               <Carousel
-                rightArrow="→"
-                className="carousel"
-                leftArrow={() => {}}
-                show={3.5}
-                slide={3}
-                swiping={true}
+               itemsToShow={3}
               >
-                <CarouselItem />
-                {data.partnerStores != null ? (
+                 <CarouselItem name="vijay" />
+                 <CarouselItem name="vijay" />
+                 <CarouselItem name="vijay" />
+                 <CarouselItem name="vijay" />
+                 <CarouselItem name="vijay" />
+                 <CarouselItem name="vijay" />
+                 <CarouselItem name="vijay" />
+                 <CarouselItem name="vijay" />
+                 <CarouselItem name="vijay" />
+                 <CarouselItem name="vijay" />
+                 <CarouselItem name="vijay" />
+                 <CarouselItem name="vijay" />
+                 <CarouselItem name="vijay" />
+                 <CarouselItem name="vijay" />
+                 <CarouselItem name="vijay" />
+
+                {/* {data.partnerStores != null ? (
                   data.partnerStores.map((ele, i) => {
-                    return <CarouselItem storeData={ele} key={i} />;
-                  })
+                    return (
+                    <CarouselItem name="vijay" storeData={ele} key={i} />
+                  )})
                 ) : (
                   <h1>.....</h1>
-                )}
-                <CarouselItem />
+                )} */}
+                
+                
+            
               </Carousel>
             </div>
             <div className="card">
@@ -170,4 +186,6 @@ const Dashboard = () => {
   );
 };
 
+
 export default Dashboard;
+
