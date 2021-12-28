@@ -5,7 +5,7 @@ import "./login.css";
 import Logo_D from "../assets/logo_d.png";
 import contact from "./login_assets/contact.png";
 import { sendOtp, verifyOtp } from "../api/index";
-import aes256 from 'aes256';
+import aes256 from "aes256";
 
 const Login = () => {
   const [enterNumber, setEnterNumber] = useState(true);
@@ -30,6 +30,7 @@ const Login = () => {
       mobile: number,
     };
     var res = await sendOtp(body);
+    console.log(res.data);
     if (res.status === 200) {
       setOtp(true);
       setEnterNumber(false);
@@ -51,10 +52,17 @@ const Login = () => {
     // console.log(res.body);
     if (res.status === 200) {
       var resData = res.data;
+      if (resData["user_exist"] === false) {
+        alert("Please Register On SayF App and then retry");
+        return;
+      }
       if (resData["type"] === "success") {
-        var token = resData['token'];
-        var encryptedToken = aes256.encrypt(process.env.REACT_APP_AES256_KEY, token);
-        localStorage.setItem('token', encryptedToken);
+        var token = resData["token"];
+        var encryptedToken = aes256.encrypt(
+          process.env.REACT_APP_AES256_KEY,
+          token
+        );
+        localStorage.setItem("token", encryptedToken);
         history.push("/dashboard");
         return;
       } else {
@@ -68,7 +76,7 @@ const Login = () => {
   return (
     <div className="login-body">
       {enterNumber ? (
-        <form >
+        <form>
           <div className="login">
             <img className="login-img" src={Logo_D} alt="sayf_logo" />
             <h3>Login </h3>
@@ -84,7 +92,11 @@ const Login = () => {
                 onChange={getNumber}
               />{" "}
               <br />
-              <button type="button" onClick={onClickSendOtp} className="otp-btn">
+              <button
+                type="button"
+                onClick={onClickSendOtp}
+                className="otp-btn"
+              >
                 Get OTP
               </button>{" "}
               <br />
@@ -108,7 +120,14 @@ const Login = () => {
                 onChange={getOtpVal}
               />{" "}
               <br />
-              <button  type="button" onClick={onClickVerifyOtp} className="otp-btn">Verify</button> <br />
+              <button
+                type="button"
+                onClick={onClickVerifyOtp}
+                className="otp-btn"
+              >
+                Verify
+              </button>{" "}
+              <br />
             </div>
           </div>
         </form>
