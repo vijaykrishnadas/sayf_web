@@ -1,11 +1,12 @@
 import React from 'react'
-import Logo from './assets/logo.png'
+
 
 const Privacy = () => {
     return (
       <div className="terms-body">
         <h1>Privacy Policy </h1><br/>
         <div className="content">
+        <p>
         Privacy Policy
 Website SayF app and/or the mobile application ‘SayF’ (collectively referred to as the “Platform”) is owned and operated by Wealides Fintech Private Limited, a private limited company having its registered office at C/o Mahaveer Gandhi, Station Back Road, Bijapur Csd, Bijapur Bijapur KA 586101 IN, which shall include its affiliates and group entities, together referred to as “Company”, “We”, “Us” or “Our”.<br/><br/>
 
@@ -112,6 +113,7 @@ Name: Priyesh V Gandhi<br/>
 Email: priyesh@sayf.in<br/>
 Phone no: +91-9008227180<br/>
 
+        </p>
 
 
 

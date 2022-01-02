@@ -10,9 +10,49 @@
     background-color: #4445C1 !important;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    padding: 30px;
     padding-left: 80px;
     padding-right: 80px;
+}
+
+.profile-top{
+    padding-left: 20px;
+}
+
+.profile-top p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dash-nav .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+
+.grid{
+    padding: 10px;
+}
+
+.grid p{
+    margin-left: 8px;
+    color: #4445C1;
+    padding: 0px 4px;
+}
+
+.grid .image{
+    font-size: 50px;
 }
 
 .dashboard .hero-section{

@@ -1,13 +1,6 @@
 
-import Logo_D from './assets/s_logo.png' 
-import Screen from './assets/screen.png' 
-import UD from './assets/underline.png' 
-import Activate from './assets/activate.png' 
-import Initiate from './assets/initiate.png' 
-import Adidas from './assets/adidas.png' 
-import Amazon from './assets/amazon.png'
 import Sayf from './assets/Svid.gif'
-import Mcd from './assets/mcd.png'
+
 import Paytm from './assets/paytm.png'
 import Icici from './assets/icici.png'
 import Augmont from './assets/Augmont.png'
@@ -22,15 +15,14 @@ import h from './assets/8.png'
 // import i from './assets/8.png'
 // import j from './assets/9.png'
 import k from './assets/10.png'
-import l from './assets/11.png'
+
 import m from './assets/12.png'
 import PartnerStore from './assets/stores.png'
 import AutoInvest from './assets/dailyinvestment.png'
 import Roundups from './assets/roundups.png'
-import Lenovo from './assets/lenovo.png' 
-import Forget from './assets/forget.gif' 
+
 import Sayf_News from './assets/sayf_news.svg';
-import Video from './assets/landing.mp4'
+
 import React, {useState} from 'react'
 
 import Navbar from './Components/Navbar'
@@ -63,8 +55,8 @@ function App() {
   // : (dS * (Math.pow(1.00025, 365 * l) - 1)) / 0.00025;
 
 
-  const data6 = ((avgMS / 25) * (Math.pow(1.0075, 12 * l) - 1) * 1.0075) / (9 / 1200)
-  const data7 = (600 * (Math.pow(1.0075, 12 * l) - 1) * 1.0075) / (9 / 1200)
+  // const data6 = ((avgMS / 25) * (Math.pow(1.0075, 12 * l) - 1) * 1.0075) / (9 / 1200)
+  // const data7 = (600 * (Math.pow(1.0075, 12 * l) - 1) * 1.0075) / (9 / 1200)
 
   
   var faq = document.getElementsByClassName("faq-page");

@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from './assets/logo.png'
+
 
 const Terms = () => {
     return (
@@ -7,7 +7,7 @@ const Terms = () => {
         <h1>Terms of use </h1><br/>
             <br/><h2>Last updated on 21/11/2021</h2>
                 <div className="content">
-                TERMS OF SERVICE
+               <p> TERMS OF SERVICE
 Last updated on 21-11-2021 
 These terms and conditions mandate the terms on which the users (“You” or “Your” or “User”) access, register, browse, download or use the mobile application ‘SayF’ ("App") and website www.sayf.in (collectively referred to as, “the Platform”) operated and managed by Wealides Fintech Private Limited, having its registered office at C/o Mahaveer Gandhi, Station Back Road, Bijapur Csd, Bijapur Bijapur Karnataka - 586101 (“Company”, “We” or “Us”).<br/>
 Please read these terms and conditions and privacy policy (available on https://sayf.in/privacy.html) (“Privacy Policy”) carefully before registering on the Platform or accessing any material, information through the Platform. By registering on or accessing the Platform, you agree to be bound by the terms and conditions of Platform Services (defined below) and applicable service-specific terms and conditions ("Augmont Terms”) (collectively called “Terms of Use”). The Company retains an unconditional right to modify or amend the Terms of Use without any requirement to notify you of the same. You can determine when this Terms of Use was last modified by referring to the “Last Updated” legend above. It shall be your responsibility to check the Terms of Use periodically for changes. Your acceptance of the amended Terms of Use shall signify your consent to the changes and the agreement to be legally bound by the same. If at any time you do not accept or agree with Terms of Use or do not wish to be bound by the same, you may not access, browse or use the Platform and immediately terminate your availing the Platform Services (as defined below). .<br/>
@@ -395,7 +395,7 @@ b.     If the cancellation charges as on the date and time of cancellation is hi
 ●      Any refunds due by Augmont to the user for non-availability of articles shall be credited to the registered user’s business deposits balance with Augmont.
  
 
-
+</p>
                 </div>
     </div>
     )
